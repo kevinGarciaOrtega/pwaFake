@@ -18,6 +18,17 @@ html, body {
   padding: 0;
   background: #12121f;
   min-height: 100svh;
+  /* Comportamiento nativo: sin bounce, sin overscroll */
+  overscroll-behavior: none;
+  -webkit-overflow-scrolling: touch;
+  /* Evita selección de texto accidental */
+  -webkit-user-select: none;
+  user-select: none;
+  /* Evita highlight al tocar en móvil */
+  -webkit-tap-highlight-color: transparent;
+  /* Safe area para notch / Dynamic Island */
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
 }
 
 #root {
