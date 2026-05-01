@@ -27,7 +27,6 @@ function formatFecha(): string {
   const meses = ['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic']
   const mes = meses[ahora.getMonth()]
   const anio = ahora.getFullYear()
-  const horas = ahora.getHours().toString().padStart(2, '0')
   const mins = ahora.getMinutes().toString().padStart(2, '0')
   const ampm = ahora.getHours() >= 12 ? 'p.m.' : 'a.m.'
   const hora12 = (ahora.getHours() % 12 || 12).toString().padStart(2, '0')
