@@ -1,0 +1,297 @@
+/* ─── Container ─────────────────────────────────────────────── */
+.cc-container {
+  width: 100%;
+  max-width: 430px;
+  min-height: 100svh;
+  margin: 0 auto;
+  background: #0f0f1a;
+  display: flex;
+  flex-direction: column;
+  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+  color: #f1f5f9;
+}
+
+/* ─── Header ────────────────────────────────────────────────── */
+.cc-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 20px 16px;
+  flex-shrink: 0;
+}
+
+.cc-back {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #f1f5f9;
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  border-radius: 8px;
+  transition: background 0.2s;
+  flex-shrink: 0;
+}
+.cc-back:hover { background: rgba(255,255,255,0.08); }
+.cc-back:focus-visible { outline: 2px solid #a855f7; outline-offset: 2px; }
+.cc-back svg { width: 22px; height: 22px; }
+
+.cc-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #f1f5f9;
+  margin: 0;
+}
+
+/* ─── Main ──────────────────────────────────────────────────── */
+.cc-main {
+  flex: 1;
+  padding: 8px 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+.cc-main::-webkit-scrollbar { display: none; }
+
+/* ─── TC Row ────────────────────────────────────────────────── */
+.cc-tc-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.cc-tc-label {
+  font-size: 13px;
+  color: #94a3b8;
+  margin: 0 0 4px;
+}
+
+.cc-tc-value {
+  font-size: 22px;
+  font-weight: 700;
+  color: #f1f5f9;
+  margin: 0;
+}
+
+/* ─── Countdown ─────────────────────────────────────────────── */
+.cc-countdown {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.cc-countdown-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1px;
+}
+
+.cc-countdown-label {
+  font-size: 10px;
+  color: #94a3b8;
+  line-height: 1.2;
+}
+
+.cc-countdown-time {
+  font-size: 12px;
+  font-weight: 700;
+  color: #22d3ee;
+  line-height: 1.2;
+}
+
+/* ─── Resumen Tengo / Recibo ────────────────────────────────── */
+.cc-resumen {
+  display: flex;
+  align-items: stretch;
+  background: #1e1e2e;
+  border: 1px solid #2a2a4e;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.cc-resumen-col {
+  flex: 1;
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cc-resumen-label {
+  font-size: 13px;
+  color: #94a3b8;
+  margin: 0;
+  text-align: center;
+}
+
+.cc-resumen-value {
+  font-size: 20px;
+  font-weight: 700;
+  color: #f1f5f9;
+  margin: 0;
+  text-align: center;
+}
+
+.cc-resumen-divider {
+  width: 1px;
+  background: #2a2a4e;
+  align-self: stretch;
+  margin: 12px 0;
+}
+
+/* ─── Field Groups ──────────────────────────────────────────── */
+.cc-field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cc-field-label {
+  font-size: 15px;
+  font-weight: 500;
+  color: #f1f5f9;
+}
+
+/* ─── Dropdown ──────────────────────────────────────────────── */
+.cc-dropdown-wrapper {
+  position: relative;
+}
+
+.cc-dropdown {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: #1e1e2e;
+  border: 1.5px solid #2a2a4e;
+  border-radius: 14px;
+  padding: 16px 18px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: border-color 0.2s;
+  text-align: left;
+}
+
+.cc-dropdown:hover,
+.cc-dropdown.open {
+  border-color: #7c3aed;
+}
+
+.cc-dropdown:focus-visible {
+  outline: 2px solid #a855f7;
+  outline-offset: 2px;
+}
+
+.cc-dropdown-placeholder {
+  font-size: 15px;
+  color: #64748b;
+  flex: 1;
+}
+
+.cc-dropdown-selected {
+  font-size: 15px;
+  color: #f1f5f9;
+  flex: 1;
+}
+
+.cc-chevron {
+  width: 20px;
+  height: 20px;
+  color: #64748b;
+  flex-shrink: 0;
+  transition: transform 0.25s ease;
+}
+
+.cc-chevron.rotated {
+  transform: rotate(180deg);
+  color: #a855f7;
+}
+
+/* ─── Dropdown List ─────────────────────────────────────────── */
+.cc-dropdown-list {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  background: #1e1e2e;
+  border: 1.5px solid #7c3aed;
+  border-radius: 14px;
+  list-style: none;
+  padding: 6px;
+  margin: 0;
+  z-index: 50;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+  animation: dropdownIn 0.18s ease;
+}
+
+.cc-dropdown-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.cc-dropdown-item:hover {
+  background: rgba(124, 58, 237, 0.15);
+}
+
+.cc-dropdown-item.selected {
+  background: rgba(124, 58, 237, 0.2);
+}
+
+.cc-item-nombre {
+  font-size: 14px;
+  font-weight: 600;
+  color: #f1f5f9;
+}
+
+.cc-item-numero {
+  font-size: 12px;
+  color: #64748b;
+  letter-spacing: 1px;
+}
+
+/* ─── Footer ────────────────────────────────────────────────── */
+.cc-footer {
+  padding: 16px 20px 32px;
+  flex-shrink: 0;
+}
+
+.cc-confirmar-btn {
+  width: 100%;
+  padding: 17px;
+  border: none;
+  border-radius: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: not-allowed;
+  background: #1e1e2e;
+  color: #4b5563;
+  transition: background 0.25s, color 0.25s, transform 0.1s;
+}
+
+.cc-confirmar-btn.enabled {
+  background: linear-gradient(135deg, #7c3aed, #a855f7);
+  color: #fff;
+  cursor: pointer;
+}
+
+.cc-confirmar-btn.enabled:hover { opacity: 0.9; }
+.cc-confirmar-btn.enabled:active { transform: scale(0.98); }
+.cc-confirmar-btn:focus-visible { outline: 2px solid #a855f7; outline-offset: 2px; }
+
+/* ─── Animaciones ───────────────────────────────────────────── */
+@keyframes dropdownIn {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

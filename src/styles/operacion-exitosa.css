@@ -1,0 +1,280 @@
+/* ─── Container ─────────────────────────────────────────────── */
+.exito-container {
+  width: 100%;
+  max-width: 430px;
+  min-height: 100svh;
+  margin: 0 auto;
+  background: #0f0f1a;
+  display: flex;
+  flex-direction: column;
+  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+  color: #f1f5f9;
+}
+
+/* ─── Header ────────────────────────────────────────────────── */
+.exito-header {
+  display: flex;
+  justify-content: center;
+  padding: 24px 20px 8px;
+  flex-shrink: 0;
+}
+
+.exito-logo {
+  font-size: 22px;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: -0.5px;
+  font-style: italic;
+  margin: 0;
+}
+
+.exito-logo-accent { color: #facc15; }
+
+.exito-logo-dot {
+  color: #facc15;
+  font-style: normal;
+  font-size: 26px;
+  line-height: 0;
+  vertical-align: -4px;
+  margin-left: 1px;
+}
+
+/* ─── Main ──────────────────────────────────────────────────── */
+.exito-main {
+  flex: 1;
+  padding: 16px 20px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+.exito-main::-webkit-scrollbar { display: none; }
+
+/* ─── Check ─────────────────────────────────────────────────── */
+.exito-check-wrapper {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.exito-check-circle {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  border: 2.5px solid #94a3b8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #22d3ee;
+  animation: popIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.exito-check-circle svg {
+  width: 36px;
+  height: 36px;
+}
+
+.exito-dot {
+  position: absolute;
+  bottom: 2px;
+  left: -4px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #a855f7;
+}
+
+/* ─── Título ────────────────────────────────────────────────── */
+.exito-titulo {
+  font-size: 18px;
+  font-weight: 600;
+  color: #f1f5f9;
+  margin: 0 0 16px;
+  text-align: center;
+}
+
+/* ─── Monedas ───────────────────────────────────────────────── */
+.exito-monedas {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.exito-moneda-flag {
+  font-size: 28px;
+  line-height: 1;
+}
+
+.exito-moneda-label {
+  font-size: 32px;
+  font-weight: 800;
+  color: #f1f5f9;
+  letter-spacing: -0.5px;
+}
+
+.exito-arrow {
+  width: 28px;
+  height: 28px;
+  color: #94a3b8;
+  flex-shrink: 0;
+}
+
+/* ─── Fecha ─────────────────────────────────────────────────── */
+.exito-fecha {
+  font-size: 13px;
+  color: #64748b;
+  margin: 0 0 20px;
+  text-align: center;
+}
+
+/* ─── Detalle card ──────────────────────────────────────────── */
+.exito-detalle {
+  width: 100%;
+  background: #1e1e2e;
+  border: 1px solid #2a2a4e;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.exito-fila {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid #2a2a4e;
+}
+
+.exito-fila:last-of-type {
+  border-bottom: none;
+}
+
+.exito-fila-label {
+  font-size: 14px;
+  color: #94a3b8;
+  flex-shrink: 0;
+}
+
+.exito-fila-valor {
+  font-size: 14px;
+  color: #f1f5f9;
+  font-weight: 500;
+  text-align: right;
+}
+
+.exito-fila-cuenta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+}
+
+.exito-cuenta-nombre {
+  font-size: 14px;
+  color: #f1f5f9;
+  font-weight: 500;
+  text-align: right;
+}
+
+.exito-cuenta-numero {
+  font-size: 12px;
+  color: #64748b;
+  letter-spacing: 0.5px;
+}
+
+/* ─── Botón Realizar otra operación ────────────────────────── */
+.exito-otra-btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 16px;
+  border: none;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #7c3aed, #a855f7);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.1s;
+}
+
+.exito-otra-btn:hover { opacity: 0.9; }
+.exito-otra-btn:active { transform: scale(0.98); }
+.exito-otra-btn:focus-visible { outline: 2px solid #a855f7; outline-offset: 2px; }
+
+/* ─── Botón Compartir ───────────────────────────────────────── */
+.exito-compartir-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  margin-top: 12px;
+  padding: 12px;
+  border: none;
+  background: none;
+  color: #94a3b8;
+  font-size: 15px;
+  font-family: inherit;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: color 0.2s, background 0.2s;
+}
+
+.exito-compartir-btn:hover {
+  color: #f1f5f9;
+  background: rgba(255,255,255,0.05);
+}
+
+.exito-compartir-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* ─── Bottom Nav ────────────────────────────────────────────── */
+.exito-bottom-nav {
+  background: #12121f;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 4px 24px;
+  flex-shrink: 0;
+}
+
+.exito-nav-item {
+  flex: 1;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 4px;
+  color: #4b5563;
+  font-size: 10px;
+  font-family: inherit;
+  border-radius: 10px;
+  transition: color 0.2s;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.exito-nav-item svg {
+  width: 22px;
+  height: 22px;
+}
+
+.exito-nav-item.active { color: #a855f7; }
+.exito-nav-item:hover  { color: #a855f7; }
+.exito-nav-item:focus-visible { outline: 2px solid #a855f7; outline-offset: 2px; }
+
+/* ─── Animación ─────────────────────────────────────────────── */
+@keyframes popIn {
+  from { opacity: 0; transform: scale(0.5); }
+  to   { opacity: 1; transform: scale(1); }
+}
