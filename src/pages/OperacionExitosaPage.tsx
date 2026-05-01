@@ -57,7 +57,7 @@ export default function OperacionExitosaPage({
       {/* Header logo */}
       <header className="exito-header">
         <h1 className="exito-logo">
-          Ban<span className="exito-logo-accent">B</span>if
+          <span className="exito-logo-bif">Bif</span>
           <span className="exito-logo-dot" aria-hidden="true">·</span>
         </h1>
       </header>

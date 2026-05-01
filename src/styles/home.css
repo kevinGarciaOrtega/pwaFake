@@ -1,18 +1,18 @@
 /* ─── Home Container ────────────────────────────────────────── */
 .home-container {
-  position: relative;
   width: 100%;
   max-width: 430px;
-  min-height: 100svh;
+  height: 100svh;
   margin: 0 auto;
   background: #0f0f1a;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
   font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
   color: #f1f5f9;
 }
 
-/* ─── Header ────────────────────────────────────────────────── */
+/* ─── Header fijo ───────────────────────────────────────────── */
 .home-header {
   background: linear-gradient(160deg, #1a0a3e 0%, #2d1b69 50%, #1e1040 100%);
   padding: 20px 20px 24px;
@@ -33,11 +33,14 @@
   letter-spacing: -0.5px;
   line-height: 1;
   font-style: italic;
+  margin: 0;
 }
 
-.logo-accent {
-  color: #facc15;
+.logo-bif-home {
+  color: #fff;
 }
+
+.logo-accent { color: #facc15; }
 
 .logo-dot {
   color: #facc15;
@@ -86,8 +89,9 @@
 .home-main {
   flex: 1;
   overflow-y: auto;
-  padding: 16px 16px 0;
+  padding: 16px 16px 16px;
   scrollbar-width: none;
+  min-height: 0; /* necesario para que flex+overflow funcione */
 }
 
 .home-main::-webkit-scrollbar { display: none; }
@@ -423,14 +427,13 @@
 
 /* ─── Bottom Navigation (Home) ──────────────────────────────── */
 .home-bottom-nav {
-  position: sticky;
-  bottom: 0;
   background: #12121f;
   border-top: 1px solid rgba(255, 255, 255, 0.06);
   display: flex;
   align-items: center;
   justify-content: space-around;
   padding: 8px 4px 20px;
+  flex-shrink: 0;
   z-index: 20;
 }
 

@@ -1,5 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192">
-  <rect width="192" height="192" rx="40" fill="#1a0a3e"/>
-  <text x="96" y="125" font-family="Georgia, serif" font-size="72" font-weight="900" font-style="italic" text-anchor="middle" fill="white">B</text>
-  <circle cx="130" cy="58" r="10" fill="#facc15"/>
+  <!-- Fondo azul con esquinas redondeadas -->
+  <rect width="192" height="192" rx="42" fill="#29ABE2"/>
+
+  <!-- Texto BanBif en blanco -->
+  <text
+    x="96"
+    y="118"
+    font-family="'Arial Rounded MT Bold', 'Nunito', Arial, sans-serif"
+    font-size="52"
+    font-weight="900"
+    text-anchor="middle"
+    fill="white"
+    letter-spacing="-1"
+  >Bif</text>
+
+  <!-- Punto verde sobre la B mayúscula (segunda B) -->
+  <!-- La segunda B está aprox en x=112, ajustado visualmente -->
+  <circle cx="113" cy="68" r="7" fill="#8DC63F"/>
+  <!-- Círculo interior hueco para simular el anillo -->
+  <circle cx="113" cy="68" r="3.5" fill="#29ABE2"/>
 </svg>

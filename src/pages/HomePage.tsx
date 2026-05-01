@@ -100,7 +100,7 @@ export default function HomePage({ usuario, onLogout }: HomePageProps) {
       <header className="home-header">
         <div className="home-header-top">
           <h1 className="home-logo">
-            Ban<span className="logo-accent">B</span>if
+            <span className="logo-bif-home">Bif</span>
             <span className="logo-dot" aria-hidden="true">·</span>
           </h1>
           <button className="para-ti-btn" aria-label="Para ti">

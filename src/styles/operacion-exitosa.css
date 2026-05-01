@@ -19,15 +19,8 @@
   flex-shrink: 0;
 }
 
-.exito-logo {
-  font-size: 22px;
-  font-weight: 800;
-  color: #fff;
-  letter-spacing: -0.5px;
-  font-style: italic;
-  margin: 0;
-}
-
+.exito-logo { font-size: 22px; font-weight: 800; color: #fff; letter-spacing: -0.5px; font-style: italic; margin: 0; }
+.exito-logo-bif { color: #fff; }
 .exito-logo-accent { color: #facc15; }
 
 .exito-logo-dot {
